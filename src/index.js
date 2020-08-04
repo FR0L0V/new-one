@@ -19,7 +19,7 @@ let renderTree = (state)=>{
 		</BrowserRouter>, document.getElementById('root'));
 		*/
 		
-		<MainApp/>, document.getElementById('root'));
+		<div>sdfhsdf</div>, document.getElementById('root'));
 }
 
 renderTree(store.getState());
