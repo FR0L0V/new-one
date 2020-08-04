@@ -3,7 +3,7 @@ import {stopSubmit} from 'redux-form';
 
 
 let defaultState = {
-	initialized:false,
+	initialized:true,
 }
 
 let appReducer = (state = defaultState, action)=>{

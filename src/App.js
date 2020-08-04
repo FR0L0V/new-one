@@ -17,10 +17,11 @@ class App extends React.Component{
 	}
 	
 	componentDidMount = () =>{
-		this.props.getUserDataThunkCreator().then(()=>{
+		/*this.props.getUserDataThunkCreator().then(()=>{
 			this.props.Initialize();
 			window.addEventListener('unhandledrejection', this.catchAllUnhandledErrors);
-		})
+		})*/
+		
 	}
 	
 	componentWillUnmount = () =>{
