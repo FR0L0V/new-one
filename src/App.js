@@ -25,7 +25,7 @@ class App extends React.Component{
 	}
 	
 	componentWillUnmount = () =>{
-		window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors);
+		/*window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors);*/
 	}
 	
 	render=()=>{
@@ -50,11 +50,14 @@ let AppContainer = connect( mapStateToProps,{getUserDataThunkCreator, Initialize
 
 let MainApp = (props) =>{
 	return(
+	<div>
+	dskfjhsdfgjhfdg
 		<BrowserRouter>
 			<Provider store={store}>
 				<AppContainer />
 			</Provider>
 		</BrowserRouter>
+	</div>
 	)
 }
 
