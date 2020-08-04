@@ -12,28 +12,12 @@ import store from './Redux/redux-store';
 
 class App extends React.Component{
 	
-	catchAllUnhandledErrors = (event) =>{
-		alert(event.reason);
-	}
-	
-	componentDidMount = () =>{
-		/*this.props.getUserDataThunkCreator().then(()=>{
-			this.props.Initialize();
-			window.addEventListener('unhandledrejection', this.catchAllUnhandledErrors);
-		})*/
-		
-	}
-	
-	componentWillUnmount = () =>{
-		/*window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors);*/
-	}
 	
 	render=()=>{
 
 			return (
 			<div className='app-wrapper'>
-				
-				<Main />
+				rtretert
 			</div>
 			);
 	}
