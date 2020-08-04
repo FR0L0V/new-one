@@ -58,6 +58,5 @@ let MainApp = (props) =>{
 	)
 }
 
-export default MainApp;
 
 export default MainApp;
