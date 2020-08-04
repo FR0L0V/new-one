@@ -11,15 +11,31 @@ import {BrowserRouter} from 'react-router-dom';
 import store from './Redux/redux-store';
 
 class App extends React.Component{
+	/*
+	catchAllUnhandledErrors = (event) =>{
+		alert(event.reason);
+	}
 	
+	componentDidMount = () =>{
+		this.props.getUserDataThunkCreator().then(()=>{
+			this.props.Initialize();
+			window.addEventListener('unhandledrejection', this.catchAllUnhandledErrors);
+		})
+	}
 	
+	componentWillUnmount = () =>{
+		window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors);
+	}
+	*/
 	render=()=>{
-
+		
 			return (
 			<div className='app-wrapper'>
-				rtretert
+				<HeaderContainer />
+				<Main />
 			</div>
 			);
+		
 	}
 }
 
@@ -34,11 +50,14 @@ let AppContainer = connect( mapStateToProps,{getUserDataThunkCreator, Initialize
 
 let MainApp = (props) =>{
 	return(
-	<div>
-	dskfjhsdfgjhfdg
-		
-	</div>
+		<BrowserRouter>
+			<Provider store={store}>
+				<AppContainer />
+			</Provider>
+		</BrowserRouter>
 	)
 }
+
+export default MainApp;
 
 export default MainApp;
