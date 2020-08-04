@@ -6,9 +6,10 @@ import {getUserDataThunkCreator, logoutThunkCreator} from './../../Redux/authRed
 
 class HeaderContainer extends React.Component{
 	
-	componentDidMount = () =>{
+	/*componentDidMount = () =>{
 		this.props.getUserDataThunkCreator();
 	}
+	*/
 	
 	render=()=>{
 		return <Header {...this.props} />
