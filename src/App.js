@@ -52,11 +52,7 @@ let MainApp = (props) =>{
 	return(
 	<div>
 	dskfjhsdfgjhfdg
-		<BrowserRouter>
-			<Provider store={store}>
-				<AppContainer />
-			</Provider>
-		</BrowserRouter>
+		
 	</div>
 	)
 }
